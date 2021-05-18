@@ -14,7 +14,7 @@ import com.example.springit.config.SpringitProperties;
 @SpringBootApplication
 @EnableConfigurationProperties(SpringitProperties.class)
 public class SpringitApplication {
-	
+
 	private static final Logger logger = LoggerFactory.getLogger(SpringitApplication.class);
 	@Autowired
 	private SpringitProperties springitProperties;
@@ -22,7 +22,7 @@ public class SpringitApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringitApplication.class, args);
 	}
-	
+
 	@Bean
 	CommandLineRunner runner() {
 		return args -> {
